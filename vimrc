@@ -33,7 +33,7 @@ set bg=light
 " Set certain options if a gui is running
 " &term =~ "xterm-256"
 if has("gui_running")
-  set guifont=Menlo\ Regular:h14
+  set guifont=Menlo\ Regular:h10
   set guioptions+=TlLb
   set guioptions-=TlLb
   set lines=60
