@@ -1,7 +1,7 @@
 " System vimrc file for MacVim
 "
-" Maintainer:	Bjorn Winckler <bjorn.winckler@gmail.com>
-" Last Change:	Sat Aug 29 2009
+" Maintainer:	Matt Leisinger <leisinmr@gmail.com>
+" Last Change:	Sat April 2 2011
 
 set nocompatible
 
@@ -9,3 +9,8 @@ set nocompatible
 " the entire MacVim menu is set up in a nib file which currently only is
 " translated to English).
 set langmenu=none
+
+set ts=2 sts=2 sw=2 expandtab
+
+command! Status echo "All systems are go!"
+
