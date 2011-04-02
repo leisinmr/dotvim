@@ -3,6 +3,10 @@
 " Maintainer:	Matt Leisinger <leisinmr@gmail.com>
 " Last Change:	Sat April 2 2011
 
+" Pathogen plugin for maintaining plugins as bundles
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set nocompatible
 
 " Disable localized menus for now since only some items are translated (e.g.
@@ -13,4 +17,8 @@ set langmenu=none
 set ts=2 sts=2 sw=2 expandtab
 
 command! Status echo "All systems are go!"
+
+if has("autocmd")
+  filetype plugin indent on
+endif
 
