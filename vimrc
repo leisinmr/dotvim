@@ -22,3 +22,28 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
+
+" ADDED BY ME
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set autoindent
+"set number
+set bg=light
+" Set certain options if a gui is running
+" &term =~ "xterm-256"
+if has("gui_running")
+  set guifont=Menlo\ Regular:h14
+  set guioptions+=TlLb
+  set guioptions-=TlLb
+  set lines=60
+  set columns=80
+  colorscheme torte
+elseif &term =~ "-256color"
+  colorscheme torte
+else
+  colorscheme default
+endif
+set hidden
+set ignorecase
+
