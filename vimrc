@@ -14,7 +14,7 @@ set nocompatible
 " translated to English).
 set langmenu=none
 
-set ts=2 sts=2 sw=2 expandtab
+set ts=4 sts=4 sw=4 expandtab
 
 command! Status echo "All systems are go!"
 
@@ -24,9 +24,9 @@ endif
 
 
 " ADDED BY ME
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 set autoindent
 "set number
 set bg=light
@@ -46,4 +46,6 @@ else
 endif
 set hidden
 set ignorecase
+
+
 
